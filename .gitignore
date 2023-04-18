@@ -23,4 +23,6 @@
 hs_err_pid*
 
 # IDEA files
-/.idea/workout.iml
+*.iml
+/.idea/shelf/
+/.idea/workspace.xml
