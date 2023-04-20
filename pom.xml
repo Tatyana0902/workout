@@ -73,12 +73,6 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-    <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-        </dependency>
-    </dependencies>
     <scm>
         <connection>scm:git:ssh://git@github.com:Tatyana0902/workout.git</connection>
         <developerConnection>scm:git:ssh://git@github.com:Tatyana0902/workout.git</developerConnection>

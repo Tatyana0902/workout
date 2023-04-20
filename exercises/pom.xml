@@ -10,4 +10,10 @@
     </parent>
     <artifactId>exercises</artifactId>
     <version>${revision}</version>
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+    </dependencies>
 </project>
