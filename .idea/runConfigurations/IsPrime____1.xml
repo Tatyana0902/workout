@@ -1,0 +1,5 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="IsPrime | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" nameIsGenerated="true" path="$PROJECT_DIR$/simple-rest-service/src/test/resources/IsPrime.http" requestIdentifier="#1" runType="Run single request">
+    <method v="2" />
+  </configuration>
+</component>

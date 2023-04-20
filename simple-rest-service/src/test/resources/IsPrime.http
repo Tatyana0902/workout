@@ -1,0 +1,2 @@
+GET localhost:8080/isPrime?n=17
+Accept: application/json
