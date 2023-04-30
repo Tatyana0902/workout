@@ -1,5 +1,6 @@
 package max;
 
+import arrays.max.Max;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

@@ -1,5 +1,6 @@
 package averagevalue;
 
+import arrays.averagevalue.AverageValue;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

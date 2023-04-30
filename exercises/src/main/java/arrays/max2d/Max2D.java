@@ -1,4 +1,4 @@
-package max2d;
+package arrays.max2d;
 
 public class Max2D {
     public static int[] max2d(int[][] array) {

@@ -1,5 +1,6 @@
 package max2d;
 
+import arrays.max2d.Max2D;
 import org.junit.Test;
 
 import static org.junit.Assert.assertArrayEquals;

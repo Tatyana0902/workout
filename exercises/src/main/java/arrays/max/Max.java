@@ -1,4 +1,4 @@
-package max;
+package arrays.max;
 
 public class Max {
     public static int max(int[] a){

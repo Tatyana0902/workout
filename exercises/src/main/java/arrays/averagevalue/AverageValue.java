@@ -1,4 +1,4 @@
-package averagevalue;
+package arrays.averagevalue;
 
 public class AverageValue {
     public static double averageValue(double[] args) {

@@ -1,4 +1,4 @@
-package arrayindex;
+package arrays.arrayindex;
 
 public class ArrayIndex {
     public static int[] arrayIndex(int[] array, int number) {

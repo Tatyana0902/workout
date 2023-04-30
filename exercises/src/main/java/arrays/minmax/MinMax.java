@@ -1,4 +1,4 @@
-package minmax;
+package arrays.minmax;
 
 public class MinMax {
     /**
