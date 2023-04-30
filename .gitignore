@@ -81,3 +81,5 @@ fix-markets/currenex/currenex-quote-gate/deploy/release
 /var
 /.PVS-Studio
 /.project
+/simple-node-service/package-lock.json
+/simple-node-service/node_modules/

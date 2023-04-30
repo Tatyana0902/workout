@@ -1,7 +1,9 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="SimpleRestServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+    <option name="ENABLE_JMX_AGENT" value="false" />
     <module name="simple-rest-service" />
     <option name="SPRING_BOOT_MAIN_CLASS" value="com.smirnov.workout.SimpleRestServiceApplication" />
+    <option name="VM_PARAMETERS" value="-Xmx128M" />
     <extension name="coverage">
       <pattern>
         <option name="PATTERN" value="com.smirnov.workout.*" />

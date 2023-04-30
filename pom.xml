@@ -89,5 +89,6 @@
     <modules>
         <module>simple-rest-service</module>
         <module>exercises</module>
+        <module>simple-node-service</module>
     </modules>
 </project>
