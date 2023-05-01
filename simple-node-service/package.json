@@ -2,10 +2,10 @@
   "name": "simple-node-service",
   "version": "1.0.0",
   "description": "node.js on docker",
-  "author": "Pael Smirnov <psmirnov@devexperts.com>",
+  "author": "Pavel Smirnov <psmirnov@devexperts.com>",
   "main": "HelloWorld.js",
   "scripts": {
-    "start": "node HelloWorld.js"
+    "start": "node --inspect HelloWorld.js"
   },
   "dependencies": {
     "express": "^4.16.1"

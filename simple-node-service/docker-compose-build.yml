@@ -1,0 +1,9 @@
+#docker-compose-build.yml
+version: '2'
+services:
+  simple-node-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
