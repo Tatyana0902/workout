@@ -8,7 +8,7 @@ public class BinSearch {
         return binSearchInternal(arr, n, 0, arr.length);
     }
 
-    public static int binSearchInternal(int[] arr, int n, int from, int to) {
+    private static int binSearchInternal(int[] arr, int n, int from, int to) {
         int l = to - from;
         if (l == 1) {
             if (n == arr[from]) {
@@ -27,6 +27,5 @@ public class BinSearch {
             return binSearchInternal(arr, n, middle, to);
         }
     }
-}
 }
 
