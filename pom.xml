@@ -89,6 +89,8 @@
     <modules>
         <module>simple-rest-service</module>
         <module>exercises</module>
+        <module>exercises2</module>
         <module>simple-node-service</module>
+        <module>try-selenium</module>
     </modules>
 </project>
