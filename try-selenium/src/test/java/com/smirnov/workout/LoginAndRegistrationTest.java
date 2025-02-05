@@ -33,7 +33,7 @@ public class LoginAndRegistrationTest {
 
     @Test
     public void testLogin() {
-        driver.get("file:///C:/Users/tania/Documents/%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0/%D1%82%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5/qa-test.html");
+        driver.get(getClass().getClassLoader().getResource("qa-test.html").toString());
         WebElement emailField = driver.findElement(By.id("loginEmail"));
         emailField.sendKeys("test@protei.ru");
 
@@ -54,6 +54,7 @@ public class LoginAndRegistrationTest {
         WebElement emailFieldTwo = driver.findElement(By.id("dataEmail"));
         // Получаем текущее значение поля ввода
         String emailValue = emailFieldTwo.getAttribute("value");
+        
         // Проверяем, что поле ввода пустое
         assertEquals("emailFieldTwo field should be empty", "", emailValue);
 //Name
@@ -121,6 +122,10 @@ public class LoginAndRegistrationTest {
 
         emailFieldTwo.sendKeys("test@protei.ru");
         NameField.sendKeys("test");
+        WebElement checkbox = driver.findElement(By.id("dataCheck11"));
+        checkbox.click();
+        WebElement radioGroup = driver.findElement(By.id("dataSelect22"));
+        radioGroup.click();
         add.click();
 
         // Create WebDriverWait instance
@@ -138,6 +143,20 @@ public class LoginAndRegistrationTest {
         // Закрытие модального окна (например, нажатием на кнопку "OK")
         WebElement closeButton = driver.findElement(By.xpath("//button[@class=\"uk-button uk-button-primary uk-modal-close\"]")); // Замените на селектор вашей кнопки закрытия
         closeButton.click();
+
+
+        // Проверка, что модальное окно закрыто
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("uk-modal-dialog")));
+        //Table
+        WebElement tbody = table.findElement(By.tagName("tbody"));
+        List<WebElement> addedUsers = tbody.findElements(By.tagName("tr"));
+        WebElement user1 = addedUsers.get(0);
+        List<WebElement> user1Td = user1.findElements(By.tagName("td"));
+        assertEquals( "test@protei.ru", user1Td.get(0).getText());
+        assertEquals( "test", user1Td.get(1).getText());
+        assertEquals( "Мужской", user1Td.get(2).getText());
+        assertEquals( "1.1", user1Td.get(3).getText());
+        assertEquals( "2.2", user1Td.get(4).getText());
     }
 
     @AfterClass
