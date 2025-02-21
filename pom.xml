@@ -72,13 +72,6 @@
                 <version>${junit.version}</version>
                 <scope>test</scope>
             </dependency>
-<!--            <dependency>-->
-<!--                <groupId>org.springframework.boot</groupId>-->
-<!--                <artifactId>spring-boot-dependencies</artifactId>-->
-<!--                <version>${spring.boot.version}</version>-->
-<!--                <type>pom</type>-->
-<!--                <scope>import</scope>-->
-<!--            </dependency>-->
         </dependencies>
     </dependencyManagement>
     <scm>
@@ -92,5 +85,6 @@
         <module>exercises2</module>
         <module>simple-node-service</module>
         <module>try-selenium</module>
+        <module>try-rest-assured</module>
     </modules>
 </project>
